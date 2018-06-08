@@ -1,0 +1,32 @@
+<html>
+<body>
+<script>
+var sContact = prompt('Кто пришел?','');
+if (sContact == null)
+{
+	alert('Вход отменен');
+}
+else if (sContact == 'Админ')
+{
+	var sPassword = prompt('Пароль?','');
+	if (sPassword == 'Черный Властелин')
+	{
+		alert('Добро пожаловать!');
+	}
+	else if (sPassword == null)
+	{
+		alert('Вход отменен');
+	}
+	else
+	{
+		alert('Пароль неверен');
+	}
+}
+else 
+{
+	alert('я вас не знаю');
+}
+</script>
+</body>
+</html>
+
