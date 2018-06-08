@@ -1,14 +1,14 @@
 <html>
 <body>
 <script>
-var sMin = prompt("Введите минимальное число диапазона ", '');
-var sMax = prompt("Введите максимальное число диапазона ", '');
-var nMin = parseInt(sMin, 10); 
-var nMax = parseInt(sMax, 10); 
-for (var i=nMin;i<=nMax;i++)
+var Min = prompt("Введите мин число диапазона ", '');
+var Max = prompt("Введите макс число диапазона ", '');
+var Min = parseInt(Min, 10); 
+var Max = parseInt(Max, 10); 
+for (var i=Min;i<=Max;i++)
 {
 	var flg=0;
-	for (var j=nMin;j<i;j++)
+	for (var j=Min;j<i;j++)
 	{
 		if (i%j == 0)
 		{
