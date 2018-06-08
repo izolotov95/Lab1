@@ -1,19 +1,19 @@
 <html>
 <body>
 <script>
-var sContact = prompt('Кто пришел?','');
-if (sContact == null)
+var Contact = prompt('Кто здесь?','');
+if (Contact == null)
 {
 	alert('Вход отменен');
 }
-else if (sContact == 'Админ')
+else if (Contact == 'Админ')
 {
-	var sPassword = prompt('Пароль?','');
-	if (sPassword == 'Черный Властелин')
+	var Password = prompt('Пароль?','');
+	if (Password == 'номер квартиры')
 	{
 		alert('Добро пожаловать!');
 	}
-	else if (sPassword == null)
+	else if (Password == null)
 	{
 		alert('Вход отменен');
 	}
