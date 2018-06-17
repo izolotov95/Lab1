@@ -1,23 +1,23 @@
 <html>
 <body>
 <script>
-var Min = prompt("Введите мин число диапазона ", '');
-var Max = prompt("Введите макс число диапазона ", '');
-var Min = parseInt(Min, 10); 
-var Max = parseInt(Max, 10); 
-for (var i=Min;i<=Max;i++)
+var Min = prompt("Введите мин число интервала ", '');
+var Max = prompt("Введите макс число интервала ", '');
+var Min = parseInt(Min, 13); 
+var Max = parseInt(Max, 13); 
+for (var j=Min;j<=Max;j++)
 {
 	var flg=0;
-	for (var j=Min;j<i;j++)
+	for (var k=Min;k<j;k++)
 	{
-		if (i%j == 0)
+		if (j%k == 0)
 		{
 			flg=1;
 		}
 	}
 	if (flg==0)
 	{
-		alert(i);
+		alert(j);
 	}
 }
 </script>
