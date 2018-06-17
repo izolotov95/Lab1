@@ -1,30 +1,30 @@
 <html>
 <body>
 <script>
-var Contact = prompt('Кто здесь?','');
+var Contact = prompt('идентификация','');
 if (Contact == null)
 {
-	alert('Вход отменен');
+	alert('Вход воспрещен');
 }
-else if (Contact == 'Админ')
+else if (Contact == 'Администратор')
 {
 	var Password = prompt('Пароль?','');
-	if (Password == 'номер квартиры')
+	if (Password == 'номер телефона')
 	{
 		alert('Добро пожаловать!');
 	}
 	else if (Password == null)
 	{
-		alert('Вход отменен');
+		alert('Вход воспрещен');
 	}
 	else
 	{
-		alert('Пароль неверен');
+		alert('Пароль введен неверено');
 	}
 }
 else 
 {
-	alert('я вас не знаю');
+	alert('вы не идентифицированы');
 }
 </script>
 </body>
